@@ -1,0 +1,24 @@
+/**clothing store, 5 columns with 15 items. Use functions to order by price and show one statistic about the items**/
+/**create the table with the column assignments**/
+create table Pennys_Closet (id integer primary key, name text, quantity integer, color text, price integer);
+
+/**add the shop components and assign each a unique variable integer**/
+insert into Pennys_Closet values (1, "tees", 12, "multi", 25);
+insert into Pennys_Closet values (2, "pants", 18, "black", 45);
+insert into Pennys_Closet values (3, "hats", 5, "white", 15);
+insert into Pennys_Closet values (4, "sweaters", 10, "blue", 35);
+insert into Pennys_Closet values (5, "jeans", 10, "blue", 40);
+insert into Pennys_Closet values (6, "blouses", 15, "multi", 35);
+insert into Pennys_Closet values (7, "socks", 10, "white", 5);
+insert into Pennys_Closet values (8, "tanks", 15, "black", 12);
+insert into Pennys_Closet values (9, "rings", 20, "silver", 30);
+insert into Pennys_Closet values (10, "scarves", 8, "multi", 20);
+insert into Pennys_Closet values (11, "belts", 5, "brown", 15);
+insert into Pennys_Closet values (12, "bracelets", 10, "silver", 25);
+insert into Pennys_Closet values (13, "graphic tees", 15, "multi", 20);
+insert into Pennys_Closet values (14, "shorts", 10, "multi", 25);
+insert into Pennys_Closet values (15, "coats", 8, "tan", 60);
+/**order the items by price lowest to highest**/
+select * from Pennys_Closet order by price;
+/**add up all of the items full quantity**/
+select sum(quantity) from Pennys_Closet;
