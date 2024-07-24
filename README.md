@@ -1,4 +1,4 @@
 # SQL
 ## SQL Portfolio
 
-## Welcome to my SQL portfolio. This code repository contains examples of SQL written from training
+## This code repository contains examples of SQL written from training
